@@ -1,0 +1,102 @@
+*{
+  font-family: "Inter", sans-serif;
+}
+
+/* Custom Color Variables */
+
+:root {
+  --white: #ffffff;
+  --passionred: #f73859;
+  --flatblue: #6088bb;
+  --spotifygreen: #00CC99;
+  --ultragrey: #fafafa;
+  --eigengrau: #16161d;
+  --lightblue: #1FA2FF;
+  --turquoise: #12D8FA;
+  --mint: #A6FFCB;
+  --stone: #f6f6f6;
+
+}
+
+
+html{
+  background-color: var(--white);
+  color: var(--eigengrau);
+}
+
+
+.navbar{
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  z-index: 100;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 40px 0px;
+}
+
+.nav-stripe {
+    height: 5px;
+    background: var(--lightblue);  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, var(--lightblue), var(--turquoise), var(--mint), var(--spotifygreen));  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, var(--lightblue),  var(--turquoise),  var(--mint), var(--spotifygreen)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.bkg-ultragrey{
+  background-color: var(--ultragrey);
+}
+
+.bkg-eigen{
+  background-color: var(--eigengrau);
+}
+
+.bkg-lightblue{
+  background-color: var(--lightblue);
+}
+
+.bkg-stone{
+  background-color: var(--stone);
+}
+
+
+
+.navbar-menu{
+    background-color: #ffffff;
+}
+.navbar-item{
+  color: var(--eigengrau);
+}
+.is-active{
+      background-color: #ffffff;
+}
+.navbar-end{
+  background-color: #ffffff;
+}
+
+.navbar-link.is-active, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:hover{
+  background-color: #ffffff;
+  color: var(--spotifygreen);
+  border-bottom-color: var(--spotifygreen);
+
+}
+
+a.navbar-item:hover{
+  color: var(--spotifygreen);
+}
+
+.post{
+  -webkit-transition: all 200ms cubic-bezier(.02, .01, .47, 1);
+  -moz-transition: all 200ms cubic-bezier(.02, .01, .47, 1);
+  transition: all 200ms cubic-bezier(.02, .01, .47, 1);
+  color: #4B4F56;
+  z-index: 1;
+}
+
+.post:hover {
+  box-shadow: 0 30px 30px rgba(0,0,0,.12);
+  transform: translate(0,-5px);
+  transition-delay: 0s !important;
+}
+
+.passionlink{
+  color: var(--passionred);
+}
