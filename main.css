@@ -53,11 +53,17 @@ background: linear-gradient(to right, var(--lightblue),  var(--turquoise),  var(
   background-color: var(--lightblue);
 }
 
+.bkg-flatblue{
+  background-color: var(--flatblue);
+}
+
 .bkg-stone{
   background-color: var(--stone);
 }
 
-
+.bkg-gradient-heavy-rain{
+	background-image: linear-gradient(125deg, #cfd9df 0%, #e2ebf0 100%) !important;
+}
 
 .navbar-menu{
     background-color: #ffffff;

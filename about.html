@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gurudutt Perichetla - Portfolio</title>
+  <link rel="stylesheet" href="bulma.min.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+  <div style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="nav-stripe"></div>
+  <nav class="navbar is-transparent">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item is-1" href="index.html" id="logo"> &nbsp; <b>Gurudutt Perichetla</b></a>
+        <span class="navbar-burger burger" data-target="navMenu">
+          <span></span>
+        <span></span>
+        <span></span>
+        </span>
+      </div>
+      <div id="navMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <a href="index.html" class="navbar-item is-active">Work</a>
+          <a href="play.html" class="navbar-item">Play</a>
+          <a href="about.html" class="navbar-item">About</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero is-white is-fullheight">
+    <div class="hero-body">
+      <div class="container">
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+
+          <div class="columns is-centered">
+            <figure class="image ">
+              <img src = "images/spotify.jpg">
+            </figure>
+          </div>
+
+
+            <div class="columns">
+            <div class="column is-5">
+              <h1 class="title" style = "align:center;">
+            I am Gurudutt. 👽 <br><br>
+            </h1>
+  <h2 class="subtitle" style = "text-align: justify;">
+            <a href = "https://drive.google.com/file/d/1HbApxOT29xI8uHwRZFCXURPYUC8NmlZk/view" style = "color: var(--spotifygreen);">Download my résumé</a>
+<br><br>
+          </h2>
+        </div>
+<div class="column is-7">
+              <h2 class="is-size-6" style = "text-align: justify;">
+                I'm currently a senior at SVCE studying Computer Science and Engineering. I've been accepted into five universities for graduate studies in Human-Computer Interaction for the Fall '19 term.
+                I was born in Chennai, India and raised in both the United States and India. I will be moving to Atlanta in July 2019.
+
+<br><br>
+            I will be joining <b>Georgia Tech's MS-HCI Program</b> under the College of Interactive Computing.
+  Previously, I had worked at Ignitus, a startup based out of <b>Carnegie Mellon University</b>, and at Groceristar, a startup based in Ternovka, Ukraine.
+<br><br>
+
+            In my freetime, I enjoy producing music and writing poetry. Also, I try to keep myself updated with trends in Technology and Education by taking MOOCs or online courses on Coursera, Udemy and Udacity. </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var burger = document.querySelector('.burger');
+      var nav = document.querySelector('#' + burger.dataset.target);
+      burger.addEventListener('click', function() {
+        burger.classList.toggle('is-active');
+        nav.classList.toggle('is-active');
+      });
+    })();
+
+    AOS.init();
+    /*
+        $('.hover').mouseover(function() {
+      $('.text').css("visibility","visible");
+    });
+
+    $('.hover').mouseout(function() {
+      $('.text').css("visibility","hidden");
+    });
+    */
+
+    /*
+    $(".portimg").hover(function(){
+
+    		var oldimg = $("assets/i2.png").attr("src");
+    		var newimg = $("assets/s2.png").attr("src");
+
+    		$(this).attr("src", newimg);
+    		}, function(){
+    		$(this).attr("src", ouimg);
+    });
+    */
+
+    function displaytext(value) {
+      text = value;
+      document.write(text);
+    }
+  </script>
+
+  <footer class="footer bkg-eigen">
+    <div class="content has-text-centered">
+      <h6 class="subtitle">Design + Code by Gurudutt Perichetla</h6>
+      <p>
+        Like what you see? Let's Connect.
+
+        <a href="mailto:guruduttperichetla@gmail.com" style="color:white;">Email </a>
+        <a href="https://www.instagram.com/guruduttx/" style="color:white;">Instagram</a>
+        <a href="https://twitter.com/guruduttperi" style="color:white;">Twitter </a>
+
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
