@@ -112,3 +112,7 @@ a.navbar-item:hover{
 .passionlink{
   color: var(--passionred);
 }
+
+.right_text{
+  text-align: right;
+}
