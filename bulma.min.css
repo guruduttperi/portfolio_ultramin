@@ -5020,31 +5020,41 @@ a.tag:hover {
 }
 
 .title.is-1 {
-  font-size: 3rem
+  font-size: 3rem;
+
 }
 
 .title.is-2 {
-  font-size: 2.5rem
+  font-size: 2.5rem;
+
 }
 
 .title.is-3 {
-  font-size: 2rem
+  font-size: 2rem;
+  line-height: 1.5;
 }
 
 .title.is-4 {
-  font-size: 1.5rem
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
 
 .title.is-5 {
-  font-size: 1.25rem
+  font-size: 1.25rem;
+  line-height: 1.5;
 }
 
 .title.is-6 {
-  font-size: 1rem
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .title.is-7 {
-  font-size: .75rem
+  font-size: .80rem
+}
+
+.title.is-8 {
+  font-size: .60rem
 }
 
 .subtitle {
@@ -5064,31 +5074,41 @@ a.tag:hover {
 }
 
 .subtitle.is-1 {
-  font-size: 3rem
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .subtitle.is-2 {
-  font-size: 2.5rem
+  font-size: 2.5rem;
+  line-height: 1.5;
 }
 
 .subtitle.is-3 {
-  font-size: 2rem
+  font-size: 2rem;
+  line-height: 1.5;
 }
 
 .subtitle.is-4 {
-  font-size: 1.5rem
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
 
 .subtitle.is-5 {
-  font-size: 1.25rem
+  font-size: 1.25rem;
+  line-height: 1.5;
 }
 
 .subtitle.is-6 {
-  font-size: 1rem
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .subtitle.is-7 {
-  font-size: .75rem
+  font-size: .8rem
+}
+
+.subtitle.is-7 {
+  font-size: .6rem
 }
 
 .heading {
