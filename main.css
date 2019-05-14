@@ -406,8 +406,25 @@ align-self: center;
 
 }
 
+.card-noborder {
+  background-color: #fff;
+  color: #4a4a4a;
+  max-width: 100%;
+  position: relative
+}
+
 .card-image{
     border-radius: 8px;
+}
+
+.port-text{
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+    align-content: center;
+    margin-bottom: auto;
+    margin-top: auto;
+
 }
 
 .is-small {
