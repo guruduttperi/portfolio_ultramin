@@ -5,7 +5,7 @@ html { font-family: 'Inter', sans-serif; }
 }
 
 *{
-  font-family: "Inter", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 
@@ -251,13 +251,14 @@ html { font-family: 'Inter', sans-serif; }
   --stone: #f6f6f6;
   --greystone: rgb(249,249,249);
   --spygrey: #202020;
+  --ibmblue: #418CFF;
 
 }
 
 
 html{
   background-color: var(--white);
-  color: var(--eigengrau);
+  color: black;
 
 }
 
@@ -273,10 +274,22 @@ html{
 .navbar{
   top: 0;
   width: 100%;
-  padding: 10px;
-
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color:black;
+  background-color: black;
   z-index: 100;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 40px 0px;
+}
+
+.navbar-brand{
+  background: black;
+}
+
+.navbar-burger{
+  background-color: black;
+  color: white;
 }
 
 .nav-stripe {
@@ -291,6 +304,9 @@ background: linear-gradient(to right, var(--lightblue), var(--mesblue));/* W3C, 
   background-color: var(--white);
 }
 
+.bkg-black{
+  background-color: black;
+}
 .bkg-ultragrey{
   background-color: var(--ultragrey);
 }
@@ -335,27 +351,29 @@ color: var(--passionred);
 }
 
 .navbar-menu{
-
+  background-color: black;
+  color: black;
 }
 .navbar-item{
-  color: var(--eigengrau);
+  color: var(--white);
+  background-color: black;
 }
 .is-active{
-      background-color: var(--white);
+      background-color: black;
 }
 .navbar-end{
- background-color: var(--white);
+ background-color: black;
 }
 
 .navbar-link.is-active, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:hover{
-  background-color: var(--white);
-  color: var(--mesblue);
-  border-bottom-color: var(--mesblue);
+  background-color: black;
+  color: var(--ibmblue);
+  border-bottom-color: var(--ibmblue);
 
 }
 
 a.navbar-item:hover{
-  color: var(--mesblue);
+  color: var(--ibmblue);
 }
 
 .post{
@@ -433,3 +451,135 @@ align-self: center;
 
 .grow { transition: all .2s ease-in-out; }
 .grow:hover {  transform: scale(.96);}
+
+.work-panel {
+	width: calc(100%);
+	background-color: #FFF;
+	text-decoration: none;
+	display: block;
+	float: left;
+	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+}
+
+.work-panel:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: #2f89fc;
+	opacity: 0;
+	transform: translate3d(-100%, 0, 0);
+	transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+
+.work-panel-homespaces:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: #f73859;
+	opacity: 0;
+	transform: translate3d(-100%, 0, 0);
+	transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.work-panel-rescue:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgb(30,127,192);
+	opacity: 0;
+	transform: translate3d(-100%, 0, 0);
+	transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+
+
+.work-panel:hover:after {
+	opacity: 0.95;
+	transform: translate3d(0, 0, 0);
+}
+
+.work-panel:hover p {
+	opacity: 1;
+}
+
+.work-panel:hover h3 {
+	color: #FFF;
+}
+
+.work-panel:nth-child(1), .work-panel:nth-child(3) {
+	margin-right: 20px;
+}
+
+.work-panel h3 {
+	font-size: 1.6rem;
+	color: #FFF;
+	font-weight: 600;
+	margin-bottom: 5px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	z-index: 2;
+	transition: all 0.2s ease-in-out;
+}
+
+.work-panel p {
+	max-width: 240px;
+	color: #FFF;
+	opacity: 0;
+	position: absolute;
+	left: 20px;
+	top: 60px;
+	z-index: 2;
+	transition: all 0.2s ease-in-out;
+}
+
+.work-panel-viaesca {
+	background-image: url('/images/a1.jpg');
+	background-size: 100%;
+}
+
+.work-panel-happysignals {
+	background-image: url('../images/happysignals_thumb.jpg');
+	background-size: 100%;
+}
+
+.work-panel-whim {
+	background-image: url('../images/whim_thumb.jpg');
+	background-size: 100%;
+}
+
+.work-panel .view-more {
+	opacity: 0;
+	z-index: 2;
+	position: absolute;
+	left: 20px;
+	bottom: 33px;
+	color: #FFF;
+	font-weight: 600;
+	transition: all 0.2s ease-in-out;
+}
+
+.work-panel .view-more:after {
+	content: ' ⟶';
+	vertical-align: -1px;
+}
+
+.work-panel:hover .view-more {
+	opacity: 1;
+}
+
+.work-info p {
+	max-width: 290px;
+}
